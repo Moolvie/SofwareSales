@@ -30,8 +30,8 @@ Partial Class SoftwareSales
         Me.OnsiteTrainingCheckBox = New System.Windows.Forms.CheckBox()
         Me.CloudBackupCheckBox = New System.Windows.Forms.CheckBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.licenseCostLabel = New System.Windows.Forms.Label()
-        Me.optionalCostsLabel = New System.Windows.Forms.Label()
+        Me.licenseCostCaption = New System.Windows.Forms.Label()
+        Me.optionalCostsCaption = New System.Windows.Forms.Label()
         Me.SoftwareCostLabel = New System.Windows.Forms.Label()
         Me.totalOptionalCostLabel = New System.Windows.Forms.Label()
         Me.CalculateButton = New System.Windows.Forms.Button()
@@ -124,30 +124,30 @@ Partial Class SoftwareSales
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.totalOptionalCostLabel)
         Me.Panel1.Controls.Add(Me.SoftwareCostLabel)
-        Me.Panel1.Controls.Add(Me.optionalCostsLabel)
-        Me.Panel1.Controls.Add(Me.licenseCostLabel)
+        Me.Panel1.Controls.Add(Me.optionalCostsCaption)
+        Me.Panel1.Controls.Add(Me.licenseCostCaption)
         Me.Panel1.Location = New System.Drawing.Point(139, 324)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(437, 127)
         Me.Panel1.TabIndex = 1
         '
-        'licenseCostLabel
+        'licenseCostCaption
         '
-        Me.licenseCostLabel.AutoSize = True
-        Me.licenseCostLabel.Location = New System.Drawing.Point(40, 25)
-        Me.licenseCostLabel.Name = "licenseCostLabel"
-        Me.licenseCostLabel.Size = New System.Drawing.Size(194, 20)
-        Me.licenseCostLabel.TabIndex = 0
-        Me.licenseCostLabel.Text = "Cost of software licensing:"
+        Me.licenseCostCaption.AutoSize = True
+        Me.licenseCostCaption.Location = New System.Drawing.Point(40, 25)
+        Me.licenseCostCaption.Name = "licenseCostCaption"
+        Me.licenseCostCaption.Size = New System.Drawing.Size(194, 20)
+        Me.licenseCostCaption.TabIndex = 0
+        Me.licenseCostCaption.Text = "Cost of software licensing:"
         '
-        'optionalCostsLabel
+        'optionalCostsCaption
         '
-        Me.optionalCostsLabel.AutoSize = True
-        Me.optionalCostsLabel.Location = New System.Drawing.Point(47, 68)
-        Me.optionalCostsLabel.Name = "optionalCostsLabel"
-        Me.optionalCostsLabel.Size = New System.Drawing.Size(187, 20)
-        Me.optionalCostsLabel.TabIndex = 1
-        Me.optionalCostsLabel.Text = "Cost of optional features:"
+        Me.optionalCostsCaption.AutoSize = True
+        Me.optionalCostsCaption.Location = New System.Drawing.Point(47, 68)
+        Me.optionalCostsCaption.Name = "optionalCostsCaption"
+        Me.optionalCostsCaption.Size = New System.Drawing.Size(187, 20)
+        Me.optionalCostsCaption.TabIndex = 1
+        Me.optionalCostsCaption.Text = "Cost of optional features:"
         '
         'SoftwareCostLabel
         '
@@ -176,7 +176,7 @@ Partial Class SoftwareSales
         '
         'ClearFormButton
         '
-        Me.ClearFormButton.Location = New System.Drawing.Point(310, 477)
+        Me.ClearFormButton.Location = New System.Drawing.Point(316, 477)
         Me.ClearFormButton.Name = "ClearFormButton"
         Me.ClearFormButton.Size = New System.Drawing.Size(117, 38)
         Me.ClearFormButton.TabIndex = 3
@@ -228,8 +228,8 @@ Partial Class SoftwareSales
     Friend WithEvents Panel1 As Panel
     Friend WithEvents totalOptionalCostLabel As Label
     Friend WithEvents SoftwareCostLabel As Label
-    Friend WithEvents optionalCostsLabel As Label
-    Friend WithEvents licenseCostLabel As Label
+    Friend WithEvents optionalCostsCaption As Label
+    Friend WithEvents licenseCostCaption As Label
     Friend WithEvents CalculateButton As Button
     Friend WithEvents ClearFormButton As Button
     Friend WithEvents CloseFormButton As Button
